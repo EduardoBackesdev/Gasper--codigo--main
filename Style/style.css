@@ -198,6 +198,10 @@ div button{
     margin-bottom: 10px;
 }
 
+.divButtonDois div button{
+    width: 120%;
+}
+
 .title{
     text-align: center;
     margin-bottom: 30px;
