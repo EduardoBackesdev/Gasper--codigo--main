@@ -8,6 +8,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    overflow: hidden;
+}
+
 
 #inputVideo{
     display:none ;
