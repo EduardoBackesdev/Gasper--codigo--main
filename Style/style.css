@@ -154,8 +154,7 @@ body{
 .divButtonUm{
     position: relative;
     top: -57px;
-    left: -90px;
-
+    left: -20px;
 }
 
 .fechar{
@@ -199,9 +198,6 @@ div button{
     margin-bottom: 10px;
 }
 
-.divButtonDois div button{
-    width: 120%;
-}
 
 .title{
     text-align: center;
