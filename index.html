@@ -47,6 +47,7 @@
                             <div class="modal">
                                 <dialog class="pendulo">
                                     <h2>PÊNDULO NO PAREDÃO</h2>
+                                    <h6>R$ 250,00</h6>
                                     <p>A mais nova e esperada atividade do parque chegou. O pêndulo no meio do paredão é um desafio de arrepiar. São 150m de altura e 70m de queda em corda estática, para completar as melhores experiências da sua vida aqui conosco.</p>                       
                                     <p>CRIANÇAS: Tamanho mínimo: 1.50m.</p>
                                     <p>PESO MÍNIMO/MÁXIMO: Altura mínima apenas – peso máximo: 140kg.</p>
@@ -237,13 +238,54 @@
                         </div>    
 
                             <div>
-                                <p class="titulo">Preços e Videos</p>
-                                <button class="buttonVideo" id="buttonVideo11"><strong>Escolhe seu Video</strong></button>
-                                                                                                                <div class="video">
-                                                                                                                    <input type="file" id="inputVideo11" accept="video/*" onchange="reproduzirVideo(this)">
-                                                                                                                    <video id="video" controls autoplay></video>
-                                                                                                                </div>
-                                <button onclick="abrirPreços()"><strong>SAIBA MAIS</strong></button> 
+                                <p class="titulo">Mundo da Caveira</p>
+                                <button onclick="abrirMundo()"><strong>Mundo da caveira</strong></button>
+                                <dialog class="mundo">
+
+                                    <p class="titulo">PaintBall</p>
+                                        <div class="video">
+                                            <button id="buttonVideo13" ><Strong>Video</Strong></button>
+                                            <video id="video13" src="PAINTBALL.mp4" controls hidden autoplay></video>
+                                            <button onclick="acabarVideoUnico13()" id="butFechar13" class="fechar" hidden>Fechar</button>
+                                        </div>
+                                    <button onclick="abrirPaint()"><strong>SAIBA MAIS</strong></button>
+                                        <dialog class="paint">
+                                            <h2>PAINTBALL</h2>
+                                            <p>Número de pessoas necessário para agendamento: 6 pessoas (qualquer dia da semana).</p>                       
+                                            <p>Atendemos QUALQUER quantidade de pessoas de quarta a domingo, porém sob disponibilidade de horário do dia. O número mínimo de participante é apenas para escolher o horário de preferência e agendar.</p>
+                                            <p>Celular para agendamento: (54) 99109-4824.</p>
+                                            <p>O Paintball é um esporte de ação e divertido, com um dos melhores e mais bem planejados espaços para prática desse esporte, o Caveira Paintball possui uma enorme área verde com mais de 3.000 m² de pura adrenalina, onde podem jogar até 16 participantes ao mesmo tempo.</p>
+                                            <p>O jogo sempre acontece com todos utilizando obrigatoriamente a máscara de proteção, coletes e roupa camuflada já estão incluídos no valor.</p>
+                                            <p>Cada jogador inicia a partida com 100 bolas feitas com conchas de gelatina cheias com tinta solúvel em água, com muita ação, estratégia e trabalho em equipe, vence o grupo que capturar a bandeira no campo adversário.</p>
+                                            <p>Temos batalha noturna com campo iluminado.</p>
+                                            <p>O paintball não é mais um serviço terceirizado, está sob direção do Parque Gasper.</p>
+                                        </dialog>
+
+                                    <p class="titulo">Airsoft</p>
+                                    <div class="video">
+                                            <button id="buttonVideo14" ><Strong>Video</Strong></button>
+                                            <video id="video14" src="TIRO.mp4" controls hidden autoplay></video>
+                                            <button onclick="acabarVideoUnico14()" id="butFechar14" class="fechar" hidden>Fechar</button>
+                                        </div>
+
+                                    <button onclick="abrirAir()"><strong>SAIBA MAIS</strong></button>
+                                    <dialog class="air">
+                                        <h2>TIRO AO ALVO: AIRSOFT e ARCO E FLECHA</h2>
+                                        <h2>HORÁRIO DE FUNCIONAMENTO: Aberto de quarta a domingo.</h2>
+                                        <p>Duas modalidades de atração que testa sua mira, eleva o nível de adrenalina e elimina o stress do dia-a-dia.</p>
+                                        <p>ARCO E FLECHA</p>
+                                        <p>- 5 Alvos a sua escolha com 10 flechas para mostrar</p>
+                                        <p>TIRO AO ALVO PAPEL</p>
+                                        <p>-Com 5 modelos de alvos diferentes a escolha do jogador - Fuzil AEG* ou Pistolas AEG* *AEG (Automatic Eletric Gun)</p>
+                                        <p>DUELO ALVO ELETRÔNICO</p>
+                                        <p>- Participam 2 jogadores</p>
+                                        <p>- 10 Alvos 15 cm de diâmetro</p>
+                                        <p>- Vence que acertar mais alvos dentro do tempo cronometrado</p>
+                                        <p>- Óculos de proteção é obrigatório e os tiros são sempre contra os alvos, nunca contra um participante, de forma a ser uma atividade segura para todas as idades</p>
+                                    </dialog>
+                                </dialog>
+
+                                <button onclick="abrirPreços()"><strong>Preços</strong></button> 
                                 <div class="modal">
                                     <dialog class="preços" id="precosAtividades">
                                         
@@ -351,7 +393,7 @@
                                                 <img src="Img/preco.png" alt="">
                                                 <div>
                                                     <h4>PENDULO</h4>
-                                                    <h4>R$ 150,00</h4>
+                                                    <h4>R$ R$ 250,00</h4>
                                                 </div>
                                             </div>
 
@@ -376,6 +418,79 @@
                                                 <div>
                                                     <h4>VÍDEO PÊNDULO</h4>
                                                     <h4>R$ 55,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>Paintball com 100 bolinhas, roupa e máscara</h4>
+                                                    <h4>R$ 80,00 por pessoa</h4>
+                                                </div>
+                                            </div>
+    
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>Recargas</h4>
+                                                    <h4 id="tamanho">– Recarga 1 (100 bolinhas): R$ 25,00</h4>
+                                                    <h4 id="tamanho">– Recarga 2: R$ 20,00</h4>
+                                                    <h4 id="tamanho">– Recarga 3: R$ 15,00</h4>
+                                                    
+                                                </div>
+                                            </div>
+    
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>Tiro ao alvo (fuzil ou pistola – 75 munições)</h4>
+                                                   
+                                                    <h4>R$ 45,00 por pessoa</h4>
+                                                </div>
+                                            </div>
+    
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>Duelo tiro ao alvo</h4>
+                                                   
+                                                    <h4>R$ 80,00 por dupla</h4>
+                                                </div>
+                                            </div>
+    
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4 >Arco e flecha</h4>
+                                                   
+                                                    <h4>R$ 30,00</h4>
+                                                </div>
+                                            </div>
+    
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>Recarga 1 (75 munições)</h4>
+                                                   
+                                                    <h4>R$ 25,00</h4>
+                                                </div>
+                                            </div>
+    
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>Recarga 2 (150 munições)</h4>
+                                                    
+                                                    <h4>R$ 35,00</h4>
+                                                </div>
+                                            </div>
+    
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>Alvo (1 unidade)</h4>
+                                                    
+                                                    <h4>R$ 5,00</h4>
                                                 </div>
                                             </div>
 
@@ -438,6 +553,25 @@
                                                     <h4>R$ 435,00</h4>
                                                 </div>
                                             </div>
+                                            
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>*Os combos 3, 4 e 5 permitem trocar o quadriciclo individual por quadriciclo em dupla, com acréscimo de R$ 30,00.</h4>
+                                                    <h4>R$ 20,00</h4>
+                                                </div>
+                                            </div>
+
+                                            //
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>*Os combos 3, 4 e 5 permitem trocar o quadriciclo individual por quadriciclo em dupla, com acréscimo de R$ 30,00.</h4>
+                                                    <h4>R$ 20,00</h4>
+                                                </div>
+                                            </div>
 
                                             <div class="precinhos">
                                                 <img src="Img/preco.png" alt="">
@@ -450,9 +584,10 @@
                                             <div class="precinhos">                                             
                                                  <div>
                                                     <h4><strong> Bônus: somente nesse combo, compre os 3 vídeos das atividades por R$70</strong></h4>
-                                                    
+                                    
                                                 </div>
                                             </div>
+                                            
                                         
                                          </div>
 

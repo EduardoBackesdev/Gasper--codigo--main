@@ -146,6 +146,22 @@ body{
     width: 95%;
 }
 
+#video13{
+    display:none;
+    position: fixed;
+    left: 2.5%;
+    top: 30%;
+    width: 95%;
+}
+
+#video14{
+    display:none;
+    position: fixed;
+    left: 2.5%;
+    top: 30%;
+    width: 95%;
+}
+
 .divButtonDois{
     margin-top: -57px;
 
@@ -213,6 +229,7 @@ div button{
     border: 2px solid #e8311f;
     padding: 15px;
 }
+
 
 .organizar{
     display: flex;
@@ -513,6 +530,60 @@ div button{
     text-align: left;
 }
 
+.paint{
+    background-color: rgba(219, 219, 219, 0.952);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+}
+
+.paint{
+    padding: 15px;
+}
+
+.paint h2{
+    color: #e8311f;
+    font-size: 30px;
+}
+
+.paint h6{
+    font-size: 20px;
+}
+
+.paint p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.air{
+    background-color: rgba(219, 219, 219, 0.952);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+}
+
+.air{
+    padding: 15px;
+}
+
+.air h2{
+    color: #e8311f;
+    font-size: 30px;
+}
+
+.air h6{
+    font-size: 20px;
+}
+
+.air p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
 .moto{
     background-color: rgba(219, 219, 219, 0.952);
     width: 80%;
@@ -540,16 +611,29 @@ div button{
     text-align: left;
 }
 
+.mundo{
+    background-color: rgba(219, 219, 219, 0.287);
+    width: 25%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+    padding: 40px;
+    padding-top: 0px;
+    overflow: hidden;
+
+}
 
 
 
-
-
-
-
+#airsoft{
+    width:100% ;
+    
+}
 
 
 footer{
     margin-top: 100px;
     text-align: center;
 }
+

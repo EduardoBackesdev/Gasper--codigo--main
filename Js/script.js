@@ -5,9 +5,32 @@ function abrirPreços (){
     modal.showModal();
 }
 
-
 window.addEventListener('click', function(event){
     var modal = document.querySelector('.preços');
+
+    if(event.target === modal){
+        modal.close()}
+})
+
+function abrirAir (){
+    var modal = document.querySelector('.air');
+    modal.showModal();
+}
+
+window.addEventListener('click', function(event){
+    var modal = document.querySelector('.air');
+
+    if(event.target === modal){
+        modal.close()}
+})
+
+function abrirPaint (){
+    var modal = document.querySelector('.paint');
+    modal.showModal();
+}
+
+window.addEventListener('click', function(event){
+    var modal = document.querySelector('.paint');
 
     if(event.target === modal){
         modal.close()}
@@ -150,6 +173,19 @@ window.addEventListener('click', function(event){
         modal.close()}
 })
 
+//
+
+function abrirMundo (){
+    var modal = document.querySelector('.mundo');
+    modal.showModal();
+}
+
+window.addEventListener('click', function(event){
+    var modal = document.querySelector('.mundo');
+
+    if(event.target === modal){
+        modal.close()}
+})
 
 // Aqui termina o codigo de abrir e fechar os modal
 
@@ -219,11 +255,7 @@ document.getElementById('buttonVideo10').addEventListener('click', function(){
     inputVideo10.click();
 })
 
-document.getElementById('buttonVideo11').addEventListener('click', function(){
-    var inputVideo11 = document.getElementById('inputVideo11');
 
-    inputVideo11.click();
-})
 
 
 
@@ -317,6 +349,22 @@ document.getElementById('buttonVideo10').addEventListener('click', function(){
 document.getElementById('buttonVideo12').addEventListener('click', function(){
     var video = document.getElementById('video12');
     var buttonFechar = document.getElementById('butFechar12')
+    video.load();
+    video.style.display = 'block';
+    buttonFechar.style.display = 'block';
+})
+
+document.getElementById('buttonVideo13').addEventListener('click', function(){
+    var video = document.getElementById('video13');
+    var buttonFechar = document.getElementById('butFechar13')
+    video.load();
+    video.style.display = 'block';
+    buttonFechar.style.display = 'block';
+})
+
+document.getElementById('buttonVideo14').addEventListener('click', function(){
+    var video = document.getElementById('video14');
+    var buttonFechar = document.getElementById('butFechar14')
     video.load();
     video.style.display = 'block';
     buttonFechar.style.display = 'block';
@@ -432,6 +480,26 @@ function acabarVideoUnico12 (){
 
     var videoReproduzir = document.getElementById('video12');
     var buttonFechar = document.getElementById('butFechar12');
+
+    videoReproduzir.pause();    
+    videoReproduzir.style.display = 'none';
+    buttonFechar.style.display = 'none';
+}
+
+function acabarVideoUnico13 (){
+
+    var videoReproduzir = document.getElementById('video13');
+    var buttonFechar = document.getElementById('butFechar13');
+
+    videoReproduzir.pause();    
+    videoReproduzir.style.display = 'none';
+    buttonFechar.style.display = 'none';
+}
+
+function acabarVideoUnico14 (){
+
+    var videoReproduzir = document.getElementById('video14');
+    var buttonFechar = document.getElementById('butFechar14');
 
     videoReproduzir.pause();    
     videoReproduzir.style.display = 'none';
